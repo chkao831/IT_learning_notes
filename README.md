@@ -52,7 +52,7 @@ test('Test getting grade', () => {
             SidOf('06366163'))(
                 PwdOf('CarolynKao168'))(
                     classIDOf('CS224N')),
-                    M.match<GrantResult, void>({
+                    M.match<GetGradeResult, void>({
                         Success: ({ grade: g }) => expect(g.grade).toBe('A+'),
                         Failure: ({ msg }) => fail(msg),
                         _: fail()
