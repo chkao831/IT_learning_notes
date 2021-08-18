@@ -30,7 +30,7 @@ Get a grade from the system:
 ```haskell
 data GetGradeResult = GetGradeSuccess Grade | GetGradeFailure Msg
 
-redraw :: ClassIDList -> ClassID -> GetGradeResult
+getGrade :: ClassIDList -> ClassID -> GetGradeResult
 ```
 - Variable Type:
     * `ClassIDList` (if success): Array\<string>
